@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="JHViewController" customModule="PaintWithMetal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +17,69 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HeM-Wf-uWW">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem systemItem="flexibleSpace" id="Hzd-Zb-pXz"/>
+                                    <barButtonItem title="Red" id="Zpd-FU-Yb1">
+                                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="redButtonTapped:" destination="BYZ-38-t0r" id="4le-qE-zas"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Yellow" id="fQ0-G3-4iF">
+                                        <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="yellowButtonTapped:" destination="BYZ-38-t0r" id="Qne-4F-kmx"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Green" id="xjf-vT-6P4">
+                                        <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="greenButtonTapped:" destination="BYZ-38-t0r" id="aZw-jM-gHg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Blue" id="uuD-o3-oU7">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="blueButtonTapped:" destination="BYZ-38-t0r" id="S5B-gy-xlb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Black" id="M2Y-t9-dQf">
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <connections>
+                                            <action selector="blackButtonTapped:" destination="BYZ-38-t0r" id="rg0-8Y-SSn"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="yxN-S1-8IT"/>
+                                    <barButtonItem title="Clear" id="tew-Hw-LF4">
+                                        <connections>
+                                            <action selector="clearButtonTapped:" destination="BYZ-38-t0r" id="gB7-6C-9L9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HeM-Wf-uWW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2mj-Qa-9le"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HeM-Wf-uWW" secondAttribute="trailing" constant="-20" id="U6i-qI-Yu9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HeM-Wf-uWW" secondAttribute="bottom" id="o84-da-XlH"/>
+                            <constraint firstItem="HeM-Wf-uWW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="prP-Kc-eY6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blackButton" destination="M2Y-t9-dQf" id="LF5-FZ-RrZ"/>
+                        <outlet property="blueButton" destination="uuD-o3-oU7" id="QQM-4d-YLA"/>
+                        <outlet property="clearButton" destination="tew-Hw-LF4" id="8hZ-9t-GDg"/>
+                        <outlet property="greenButton" destination="xjf-vT-6P4" id="K4D-5K-eSZ"/>
+                        <outlet property="redButton" destination="Zpd-FU-Yb1" id="Umt-hm-3qR"/>
+                        <outlet property="toolbar" destination="HeM-Wf-uWW" id="3qF-Ya-4cp"/>
+                        <outlet property="yellowButton" destination="fQ0-G3-4iF" id="vht-6G-Cdp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

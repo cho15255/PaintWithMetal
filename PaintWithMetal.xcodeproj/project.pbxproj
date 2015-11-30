@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64F41B1E1C0B997800949537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F41B1D1C0B997800949537 /* AppDelegate.swift */; };
-		64F41B201C0B997800949537 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F41B1F1C0B997800949537 /* ViewController.swift */; };
+		64F41B1E1C0B997800949537 /* JHAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F41B1D1C0B997800949537 /* JHAppDelegate.swift */; };
+		64F41B201C0B997800949537 /* JHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F41B1F1C0B997800949537 /* JHViewController.swift */; };
 		64F41B231C0B997800949537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64F41B211C0B997800949537 /* Main.storyboard */; };
 		64F41B251C0B997800949537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64F41B241C0B997800949537 /* Assets.xcassets */; };
 		64F41B281C0B997800949537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64F41B261C0B997800949537 /* LaunchScreen.storyboard */; };
 		64F41B331C0B997800949537 /* PaintWithMetalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F41B321C0B997800949537 /* PaintWithMetalTests.swift */; };
 		64F41B3E1C0B997800949537 /* PaintWithMetalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F41B3D1C0B997800949537 /* PaintWithMetalUITests.swift */; };
+		64F41B4C1C0B99A800949537 /* JHUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F41B4B1C0B99A800949537 /* JHUtil.swift */; };
+		64F41B4E1C0B9BC800949537 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 64F41B4D1C0B9BC800949537 /* Shaders.metal */; };
+		64F41B501C0B9ECC00949537 /* JHViewController+TouchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F41B4F1C0B9ECC00949537 /* JHViewController+TouchHandler.swift */; };
+		64F41B521C0BA0B700949537 /* JHViewController+Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F41B511C0BA0B700949537 /* JHViewController+Renderer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +39,8 @@
 
 /* Begin PBXFileReference section */
 		64F41B1A1C0B997800949537 /* PaintWithMetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaintWithMetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		64F41B1D1C0B997800949537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		64F41B1F1C0B997800949537 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		64F41B1D1C0B997800949537 /* JHAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHAppDelegate.swift; sourceTree = "<group>"; };
+		64F41B1F1C0B997800949537 /* JHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHViewController.swift; sourceTree = "<group>"; };
 		64F41B221C0B997800949537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64F41B241C0B997800949537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64F41B271C0B997800949537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		64F41B391C0B997800949537 /* PaintWithMetalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaintWithMetalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F41B3D1C0B997800949537 /* PaintWithMetalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintWithMetalUITests.swift; sourceTree = "<group>"; };
 		64F41B3F1C0B997800949537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64F41B4B1C0B99A800949537 /* JHUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHUtil.swift; sourceTree = "<group>"; };
+		64F41B4D1C0B9BC800949537 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		64F41B4F1C0B9ECC00949537 /* JHViewController+TouchHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JHViewController+TouchHandler.swift"; sourceTree = "<group>"; };
+		64F41B511C0BA0B700949537 /* JHViewController+Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JHViewController+Renderer.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +105,12 @@
 		64F41B1C1C0B997800949537 /* PaintWithMetal */ = {
 			isa = PBXGroup;
 			children = (
-				64F41B1D1C0B997800949537 /* AppDelegate.swift */,
-				64F41B1F1C0B997800949537 /* ViewController.swift */,
+				64F41B1D1C0B997800949537 /* JHAppDelegate.swift */,
+				64F41B1F1C0B997800949537 /* JHViewController.swift */,
+				64F41B4F1C0B9ECC00949537 /* JHViewController+TouchHandler.swift */,
+				64F41B511C0BA0B700949537 /* JHViewController+Renderer.swift */,
+				64F41B4B1C0B99A800949537 /* JHUtil.swift */,
+				64F41B4D1C0B9BC800949537 /* Shaders.metal */,
 				64F41B211C0B997800949537 /* Main.storyboard */,
 				64F41B241C0B997800949537 /* Assets.xcassets */,
 				64F41B261C0B997800949537 /* LaunchScreen.storyboard */,
@@ -256,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64F41B201C0B997800949537 /* ViewController.swift in Sources */,
-				64F41B1E1C0B997800949537 /* AppDelegate.swift in Sources */,
+				64F41B4E1C0B9BC800949537 /* Shaders.metal in Sources */,
+				64F41B201C0B997800949537 /* JHViewController.swift in Sources */,
+				64F41B4C1C0B99A800949537 /* JHUtil.swift in Sources */,
+				64F41B521C0BA0B700949537 /* JHViewController+Renderer.swift in Sources */,
+				64F41B1E1C0B997800949537 /* JHAppDelegate.swift in Sources */,
+				64F41B501C0B9ECC00949537 /* JHViewController+TouchHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

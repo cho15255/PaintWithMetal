@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  JHAppDelegate.swift
 //  PaintWithMetal
 //
 //  Created by Jae Hee Cho on 2015-11-29.
@@ -9,7 +9,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class JHAppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
