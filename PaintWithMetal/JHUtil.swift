@@ -30,10 +30,11 @@ func getMetalCoordinate(forPoint point:CGPoint, forFrame frame:CGRect) -> (Float
     return (xCoord, yCoord)
 }
 
-func getColorFromHex(var hexValue:UInt) -> UIColor {
-    if hexValue > 0xffffff {
-        hexValue = 0xffffff
+func getColorFromHex(hexValue:UInt) -> UIColor {
+    var hex = hexValue;
+    if hex > 0xffffff {
+        hex = 0xffffff
     }
     
-    return UIColor(red: CGFloat(Double((hexValue & 0xFF0000) >> 16)/255.0), green: CGFloat(Double((hexValue & 0x00FF00) >> 8)/255.0), blue: CGFloat(Double((hexValue & 0x0000FF) >> 0)/255.0), alpha: 1)
+    return UIColor(red: CGFloat(Double((hex & 0xFF0000) >> 16)/255.0), green: CGFloat(Double((hex & 0x00FF00) >> 8)/255.0), blue: CGFloat(Double((hex & 0x0000FF) >> 0)/255.0), alpha: 1)
 }

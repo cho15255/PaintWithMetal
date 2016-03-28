@@ -19,7 +19,7 @@ extension JHViewController {
                 self.renderPassDescriptor.colorAttachments[0].clearColor = MTLClearColorMake(0.9, 0.9, 0.9, 1)
                 self.renderPassDescriptor.colorAttachments[0].storeAction = .Store
                 
-                self.bufferCleared++
+                self.bufferCleared += 1
             } else {
                 self.renderPassDescriptor.colorAttachments[0].loadAction = .Load
             }
@@ -63,7 +63,7 @@ extension JHViewController {
                 }
                 
                 if self.didTouchEnded < 3 {
-                    self.didTouchEnded++
+                    self.didTouchEnded += 1
                 } else {
                     self.vertexData = []
                     self.colorData = []
